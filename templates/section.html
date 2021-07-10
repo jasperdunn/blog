@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% import "macros/posts.html" as posts %}
+
+{% block title %}
+{{ section.title }} | Jasper Dunn
+{% endblock title%}
+
+{% block header %}
+{% endblock header %}
+
+{% block main %}
+<main class="main-content main-content--section">
+    {{ posts::grid(pages=section.pages) }}
+</main>
+{% endblock main %}

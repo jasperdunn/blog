@@ -1,0 +1,27 @@
+{% macro grid(pages) %}
+<div class="post-grid">
+    {% for page in pages %}
+    <a class="post" href="{{ get_url(path=page.path, trailing_slash=false) }}">
+        <article>
+            <img class="post__image"src="{{ get_url(path=page.path ~ page.extra.image) }}" />
+            <h2 class="post__title">{{ page.title }}</h2>
+            <p class="post__description">{{ page.description }}</p>
+            {{ self::post_meta(page=page) }}
+        </article>
+    </a>
+    {% endfor %}
+</div>
+{% endmacro  %}
+
+{% macro post_meta(page) %}
+<div class="post__meta">
+    <img class="post__meta-author-profile-image" src="{{ get_url(path="jasper-dunn.jpg") }}" alt="Jasper Dunn" />
+    <div>
+        <span class="post__meta-author-name">JASPER DUNN</span>
+        <div class="post__meta-info">
+            <span>{{ page.date | date(format="%d %b %Y") | upper }}</span> ∙ 
+            <span>{{ page.reading_time }} MIN READ</span>
+        </div>
+    </div>
+</div>
+{% endmacro  %}

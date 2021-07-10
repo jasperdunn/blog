@@ -1,0 +1,50 @@
+@import 'variables.scss';
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 32px;
+  row-gap: 64px;
+}
+
+.post {
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.post__image {
+  border-radius: 5px;
+  aspect-ratio: 1.6;
+  object-fit: cover;
+}
+
+.post__title {
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.post__description {
+  margin-top: 8px;
+}
+
+.post__meta {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: min-content auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.post__meta-info {
+  font-size: 12px;
+}
+
+.post__meta-author-name {
+  font-size: 14px;
+}
+
+.post__meta-author-profile-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
