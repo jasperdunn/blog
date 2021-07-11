@@ -13,7 +13,7 @@ draft = false
 
 # Use aliases if you are moving content but want to redirect previous URLs to the
 # current one. This takes an array of paths, not URLs.
-aliases = []
+aliases = ["comment-clutter"]
 
 # When set to "true", the page will be in the search index. This is only used if
 # `build_search_index` is set to "true" in the Zola configuration and the parent section
