@@ -3,7 +3,7 @@
     {% for page in pages %}
     <a class="post" href="{{ get_url(path=page.path, trailing_slash=false) }}">
         <article>
-            <img class="post__image"src="{{ get_url(path=page.path ~ page.extra.image, cachebust=true) }}" />
+            {{ self::post_image(page=page, class="post__image") }}
             <h2 class="post__title">{{ page.title }}</h2>
             <p class="post__description">{{ page.description }}</p>
             {{ self::post_meta(page=page) }}
@@ -24,4 +24,8 @@
         </div>
     </div>
 </div>
+{% endmacro  %}
+
+{% macro post_image(page, class) %}
+<img class={{ class }} src="{{ get_url(path=page.path ~ page.extra.image, cachebust=true) }}" alt={{ page.extra.image_alt }} />
 {% endmacro  %}

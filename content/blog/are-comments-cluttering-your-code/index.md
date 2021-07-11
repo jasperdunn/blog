@@ -33,9 +33,8 @@ tags = ["dx"]
 # Your own data.
 [extra]
 image = "my-dog.jpg"
+image_alt = "A photograph of a cat incorrectly labelled “my dog”."
 +++
-
-![A photograph of a cat incorrectly labelled "my dog".](my-dog.jpg)
 
 Writing code involves communication between you, a computer, and other humans.
 
