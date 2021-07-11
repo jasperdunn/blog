@@ -9,7 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Jasper Dunn" />
   {% block head %}
-  {{ meta::create(title="Jasper Dunn", description="My thoughts on software development.", url=get_url(path="")) }}
+  {{
+    meta::create(title="Jasper Dunn",
+      description="My thoughts on software development.",
+      url=get_url(path=""),
+      type="website",
+      image_url=get_url(path="jasper-dunn.jpg"))
+  }}
   {% endblock head %}
   <meta name="referrer" content="no-referrer-when-downgrade" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />

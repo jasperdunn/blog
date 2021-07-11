@@ -1,7 +1,13 @@
 {% extends "index.html" %}
 
 {% block head %}
-{{ meta::create(title=section.title ~ " | Jasper Dunn", description="My thoughts on software development.", url=get_url(path=section.path)) }}
+{{
+    meta::create(title=section.title ~ " | Jasper Dunn",
+        description="My thoughts on software development.",
+        url=get_url(path=section.path),
+        type="website",
+        image_url=get_url(path="jasper-dunn.jpg"))
+}}
 {% endblock head %}
 
 {% block header %}

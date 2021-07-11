@@ -1,7 +1,13 @@
 {% extends "index.html" %}
 
 {% block head %}
-{{ meta::create(title=page.title, description=page.description, url=get_url(path=page.path)) }}
+{{
+    meta::create(title=page.title,
+        description=page.description,
+        url=get_url(path=page.path),
+        type="article",
+        image_url=get_url(path=page.extra.image))
+}}
 {% endblock head %}
 
 {% block header %}
