@@ -72,7 +72,7 @@ _When naming variables, sometimes it can help to speak the name out loud in the 
 
 Okay, let's name our variables clearly for humans to read!
 
-![](signs.jpg)
+![signs pointing in all different directions](signs.jpg)
 Photo by [Daniele Levis Pelusi](https://unsplash.com/@yogidan2012)
 
 ## Naming Conventions
