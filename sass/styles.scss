@@ -40,10 +40,10 @@
 .main-footer {
   max-width: 1200px;
   width: 100%;
-  padding: 16px;
+  padding: 40px 16px;
 
   @media (min-width: $breakpoint-up-sm) {
-    padding: 32px;
+    padding: 40px 32px;
   }
 }
 
