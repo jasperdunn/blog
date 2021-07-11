@@ -1,7 +1,7 @@
 {% macro grid(pages) %}
 <div class="post-grid">
     {% for page in pages %}
-    <a class="post" href="{{ get_url(path=page.path, trailing_slash=false) }}">
+    <a class="post" href={{ get_url(path=page.path, trailing_slash=true) }}>
         <article>
             {{ self::post_image(page=page, class="post__image") }}
             <h2 class="post__title">{{ page.title }}</h2>
@@ -15,7 +15,7 @@
 
 {% macro post_meta(page) %}
 <div class="post__meta">
-    <img class="post__meta-author-profile-image" src="{{ get_url(path="jasper-dunn.jpg", cachebust=true) }}" alt="Jasper Dunn" />
+    <img class="post__meta-author-profile-image" src={{ get_url(path="jasper-dunn.jpg", cachebust=true) }} alt="Jasper Dunn" />
     <div>
         <span class="post__meta-author-name">JASPER DUNN</span>
         <div class="post__meta-info">
@@ -27,5 +27,5 @@
 {% endmacro  %}
 
 {% macro post_image(page, class) %}
-<img class={{ class }} src="{{ get_url(path=page.path ~ page.extra.image, cachebust=true) }}" alt={{ page.extra.image_alt }} />
+<img class={{ class }} src={{ get_url(path=page.path ~ page.extra.image, cachebust=true) }} alt={{ page.extra.image_alt }} />
 {% endmacro  %}

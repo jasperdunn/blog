@@ -4,7 +4,7 @@
 {{
     meta::create(title=section.title ~ " | Jasper Dunn",
         description="My thoughts on software development.",
-        url=get_url(path=section.path),
+        url=get_url(path=section.path,trailing_slash=true),
         type="website",
         image_path="jasper-dunn.jpg")
 }}
