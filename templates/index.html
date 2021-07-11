@@ -1,28 +1,18 @@
 {% import "macros/posts.html" as posts %}
+{% import "macros/meta.html" as meta %}
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>{% block title %} Jasper Dunn {% endblock title %}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Jasper Dunn" />
-  <meta name="description" content="My thoughts on software development." />
+  {% block head %}
+  {{ meta::create(title="Jasper Dunn", description="My thoughts on software development.", url=get_url(path="")) }}
+  {% endblock head %}
   <meta name="referrer" content="no-referrer-when-downgrade" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="canonical" href="https://www.jasperdunn.com/" />
-
-  <meta property="og:site_name" content="Jasper Dunn" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Jasper Dunn" />
-  <meta property="og:description" content="My thoughts on software development." />
-  <meta property="og:url" content="https://www.jasperdunn.com/" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Jasper Dunn" />
-  <meta name="twitter:description" content="My thoughts on software development." />
-  <meta name="twitter:url" content="https://www.jasperdunn.com/" />
   <link rel="stylesheet" href="{{ get_url(path="styles.css", trailing_slash=false, cachebust=true) }}">
 </head>
 

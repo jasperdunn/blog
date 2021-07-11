@@ -1,8 +1,8 @@
 {% extends "index.html" %}
 
-{% block title %}
-{{ page.title }}
-{% endblock title%}
+{% block head %}
+{{ meta::create(title=page.title, description=page.description, url=get_url(path=page.path)) }}
+{% endblock head %}
 
 {% block header %}
 {% endblock header %}
