@@ -172,3 +172,24 @@
 .page-image {
   margin-top: 36px;
 }
+
+.anchor-link {
+  display: none;
+  fill: $white;
+  text-decoration: none;
+  line-height: 1;
+  padding-left: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &:hover {
+    .anchor-link {
+      display: inline-block;
+    }
+  }
+}
