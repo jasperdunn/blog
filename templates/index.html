@@ -47,7 +47,10 @@
     <footer class="main-footer">
       {% block footer %}
       <div>
-        <a href={{ get_url(path="",trailing_slash=true) }}>Jasper Dunn</a> &copy; 2021
+        <div style="margin-bottom: 8px;">
+          <a href={{ get_url(path="",trailing_slash=true) }}>Jasper Dunn</a> &copy; 2021
+        </div>
+        <div>Built with <a href="https://www.getzola.org" target="_blank" rel="noopener noreferrer">Zola</a></div>
       </div>
       <nav>
         <a class="social-link" href="https://www.linkedin.com/in/jasper-dunn-635626123/" target="_blank" rel="noopener noreferrer" title="linked in">

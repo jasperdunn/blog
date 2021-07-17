@@ -15,12 +15,14 @@
 
 {% block main %}
 <main class="main-content">
-    <div class="page-content">
+    <div class="page">
         <h1>{{ page.title }}</h1>
         <p class="page-description">{{ page.description }}</p>
         {{ posts::post_meta(page=page) }}
         {{ posts::post_image(page=page, class="page-image") }}
-        {{ page.content | safe }}
+        <div class="page-content">
+            {{ page.content | safe }}
+        </div>
     </div>
 </main>
 {% endblock main %}

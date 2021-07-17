@@ -125,7 +125,7 @@ In summary, I encourage you not to write pointless comments. They often make the
 
 If a fellow developer comes across a comment, the chances are that they'll spend unnecessary time trying to understand the author's intention.
 
-Comments aren't required when the code is written with correct variable names; ones that give meaning outside of context.
+Comments generally aren't required when the code is written with correct variable names; ones that give meaning outside of context.
 
 Aim to write only what is required for the reader to understand the code.
 
