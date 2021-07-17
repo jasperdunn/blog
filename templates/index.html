@@ -19,14 +19,14 @@
   {% endblock head %}
   <meta name="referrer" content="no-referrer-when-downgrade" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href={{ get_url(path="styles.css", cachebust=true) }}>
+  <link rel="stylesheet" href="{{ get_url(path="styles.css", cachebust=true) }}">
 </head>
 
 <body class="wrapper">
   <div class="main-nav-container">
     <nav class="main-nav">
-      <a href={{ get_url(path="",trailing_slash=true) }}>Jasper Dunn</a>
-      <a href={{ get_url(path="blog", trailing_slash=true) }}>Blog</a>
+      <a href="{{ get_url(path="",trailing_slash=true) }}">Jasper Dunn</a>
+      <a href="{{ get_url(path="blog", trailing_slash=true) }}">Blog</a>
     </nav>
   </div>
   
@@ -48,7 +48,7 @@
       {% block footer %}
       <div>
         <div style="margin-bottom: 8px;">
-          <a href={{ get_url(path="",trailing_slash=true) }}>Jasper Dunn</a> &copy; 2021
+          <a href="{{ get_url(path="",trailing_slash=true) }}">Jasper Dunn</a> &copy; 2021
         </div>
         <div>Built with <a href="https://www.getzola.org" target="_blank" rel="noopener noreferrer">Zola</a></div>
       </div>

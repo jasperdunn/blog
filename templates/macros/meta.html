@@ -1,10 +1,10 @@
 {% macro create(title, description, url, type, image_path) %}
 <title>{{ title }}</title>
-<meta name="description" content={{ description }} />
-<link rel="canonical" href={{ url }} />
-<meta property="og:url" content={{ url }} />
-<meta property="og:title" content={{ title }} />
-<meta property="og:description" content={{ description }} />
-<meta property="og:image" content={{ url ~ '/' ~ image_path }} />
-<meta property="og:type" content={{ type }} />
+<meta name="description" content="{{ description }}" />
+<link rel="canonical" href="{{ url }}" />
+<meta property="og:url" content="{{ url }}" />
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta property="og:image" content="{{ url ~ '/' ~ image_path }}" />
+<meta property="og:type" content="{{ type }}" />
 {% endmacro  %}
