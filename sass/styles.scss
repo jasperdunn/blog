@@ -181,6 +181,11 @@ body {
     color: var(--code-color);
     background-color: var(--code-background-color);
   }
+
+  hr {
+    margin-top: 36px;
+    border-style: solid;
+  }
 }
 
 .page-description {
