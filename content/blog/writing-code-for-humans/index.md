@@ -33,7 +33,7 @@ tags = ["dx"]
 # Your own data.
 [extra]
 image = "yoda-coda.jpg"
-image_alt = "A meme involving code written without the principles in this article, and Yoda from star wars."
+image_alt = "A meme involving code written without the principles in this article, and Yoda from Star Wars. In Yoda's voice: if is item selected, item is not selected is false."
 +++
 
 Working in a team environment requires effective communication. It's the reason why in a team we all work on the same project, in the same office, and speak the same language.
