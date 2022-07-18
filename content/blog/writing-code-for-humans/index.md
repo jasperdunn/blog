@@ -62,7 +62,7 @@ Here I have provided examples of things that don't require much guesswork or ass
 
 You shouldn't have to read through multiple lines of code and memorize several other variables to understand what a specific variable is for.
 
-Sure, in many languages you can jump to the declaration, or hover over the variable to find its type. Regardless, you shouldn't have to do this. Treat your code as a product, and create a nice experience for the users (fellow developers) of your code.
+Sure, in many development environments you can jump to the declaration, or hover over the variable to find its type. Regardless, you shouldn't have to do this. Treat your code as a product, and create a nice experience for the users (fellow developers) of your code.
 
 If we have the power to name things whatever we want, why not name things with purpose and precision?
 
@@ -219,9 +219,9 @@ How cool is that!
 
 Boolean variables describe the state of _something_. That _something_ must be included in the name.
 
-`var isCartLoading = true` - this sounds like a question, and a function returns an answer, so this would be suitable as a function name instead of a boolean.
+`var isCartLoading = true` - this sounds like a question, and a function returns a value (an answer), so this would be suitable as a function name instead of a boolean.
 
-`var cartIsLoading = true` - this is more straightforward and reads like how we would describe the state to a fellow human being.
+`var cartIsLoading = true` - this is more straightforward and reads like how we would describe the current state to a fellow human being.
 
 ### Write it like you mean it
 
@@ -245,6 +245,8 @@ Here is a function that returns true if all items are selected.
 
 `item.isNotVisible` - never write a negation in the name of a variable. It can be especially confusing to understand when combined with other booleans and functions in an expression. This a common recommendation, but considering how often I see this beasty I thought I’d also include it.
 
+`item.disabled` - this is a perfectly good name for a boolean variable that is most commonly false, this is not a negation. `item.isNotEnabled` on the other hand is a negation.
+
 ## Numbers
 
 ### Magic numbers
@@ -266,6 +268,7 @@ generateFooBarDevice(power, mass);
 `var bananas = 5` - the assumption here is that `bananas` describes a collection of `banana`, an array, not a scalar quantity.
 
 `var numberOfBananas = 5` - this name is much more descriptive of your intention.
+`var totalBananas = 5` - even better.
 
 ## Conclusion
 
