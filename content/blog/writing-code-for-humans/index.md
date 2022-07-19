@@ -118,7 +118,7 @@ function disableButton(buttonId) {
     // disables the button
 }
 
-// implementation
+// usage
 if(/* condition */) {
     disableButton(buttonId)
 }
@@ -135,7 +135,7 @@ function isButtonDisabled(buttonId) {
   // returns true/false based on the buttons state
 }
 
-// implementation
+// usage
 var buttonIsDisabled = isButtonDisabled(buttonId);
 ```
 
@@ -150,7 +150,7 @@ function shouldButtonBeDisabled(buttonId) {
   // returns true/false based on rules/conditions
 }
 
-// implementation
+// usage
 var buttonShouldBeDisabled = shouldButtonBeDisabled(buttonId);
 ```
 
